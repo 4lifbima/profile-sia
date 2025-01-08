@@ -2037,7 +2037,7 @@ responsive
 }
 
 .blog-posts article {
-  background-color: var(--surface-color);
+  background-color: #f2f2f2;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   padding: 30px;
   height: 100%;
@@ -2049,6 +2049,7 @@ responsive
   max-height: 200px;
   margin: -30px -30px 15px -30px;
   overflow: hidden;
+  pointer-events: none;
 }
 
 .blog-posts .post-category {
@@ -2065,12 +2066,17 @@ responsive
 }
 
 .blog-posts .title a {
-  color:#191a20;
+  color:#000000;
+  pointer-events: auto;
+  position: relative;
+  z-index: 10;
   transition: 0.3s;
+
 }
 
 .blog-posts .title a:hover {
-  color: green;
+  color: #223a4b;
+  cursor: pointer;
 }
 
 .blog-posts .post-author-img {
